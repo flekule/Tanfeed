@@ -1,8 +1,10 @@
 package com.example.toshiba.kilimoapp;
 
+import android.app.Fragment;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -23,14 +25,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -40,8 +35,9 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-    }
 
+        displaySelectedScreen(R.id.nav_home);
+    }
 
     @Override
     public void onBackPressed() {
@@ -75,31 +71,38 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
-    @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
+    public void displaySelectedScreen(int id){
+        Fragment fragment = null;
+        switch (id){
 
-        if (id == R.id.Home) {
-
-        } else if (id == R.id.nav_timetable) {
-
-
-        } else if (id == R.id.nav_news)    {
-
-        } else if (id == R.id.nav_tools)   {
-
-        } else if (id == R.id.nav_account) {
-
-        } else if (id == R.id.nav_share)   {
-
-        } else if (id == R.id.nav_send)    {
+            case R.id.nav_home:
+                fragment = new Home();
+                break;
+            case R.id.nav_timetable:
+                fragment = new RatibaYangu();
+                break;
+            case R.id.nav_news:
+                fragment = new HabariKilimo();
+                break;
+        }
+        if (fragment != null){
+            FragmentTransaction ft = getFragmentManager().beginTransaction();
+            ft.replace(R.id.content_main, fragment);
+            ft.commit();
 
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+
+    }
+
+    @SuppressWarnings("StatementWithEmptyBody")
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+
+      int id = item.getItemId();
+        displaySelectedScreen(id);
         return true;
     }
 }
