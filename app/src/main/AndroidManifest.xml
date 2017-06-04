@@ -29,12 +29,12 @@
         </activity>
         <activity android:name=".LoginActivity"
                   android:label="Login"
-                  android:theme="@style/AppTheme.NoActionBar">
+                  >
 
         </activity>
         <activity android:name=".RegisterActivity"
                   android:label="Register"
-                  android:theme="@style/AppTheme.NoActionBar">
+                  >
             <uses-permission android:name="android.permission.INTERNET" />
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
          </activity>
