@@ -29,7 +29,7 @@ import java.util.Map;
 public class RegisterActivity extends AppCompatActivity {
 
     private static final String TAG = "RegisterActivity";
-    private static final String URL_FOR_REGISTRATION = "https://XXX.XXX.X.XX/android_login_example/register.php";
+    private static final String URL_FOR_REGISTRATION = "http://com.example.toshiba.kilimoapp/android_login_example/register.php";
     ProgressDialog progressDialog;
 
     private EditText signupInputName, signupInputEmail, signupInputPassword, signupInputAge;

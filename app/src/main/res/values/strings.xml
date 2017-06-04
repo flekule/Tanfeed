@@ -20,4 +20,6 @@
     <string name="karibu_app">Karibu katika app yetu ya kilimo ndugu , jali mifugo yako kwa kufuata njia bora za ufugaji zilizofanyiwa tafiti na wataalamu wetu"</string>
     <string name="tanfeeds">Tanfeeds</string>
     <string name="tanfeeds_site">www.tanfeeds.com</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
 </resources>
