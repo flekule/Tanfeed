@@ -4,6 +4,12 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_activity_splash_screen">Tanfeeds</string>
+    <string name="btn_login">Login</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_email">Email</string>
+    <string name="btn_link_signup">Signup</string>
 
     <string name="action_settings">Settings</string>
+
+    <string name="karibu_app">Karibu katika app yetu ya kilimo ndugu , jali mifugo yako kwa kufuata njia bora za ufugaji zilizofanyiwa tafiti na wataalamu wetu"</string>
 </resources>
