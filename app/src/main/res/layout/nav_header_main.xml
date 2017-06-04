@@ -12,10 +12,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-   <ImageView
-       android:layout_width="100dp"
-       android:layout_height="60dp"
-     />
+    <ImageView
+        android:layout_width="112dp"
+        android:layout_height="60dp"
+        android:background="@drawable/fuganasi" />
 
     <TextView
         android:layout_width="match_parent"

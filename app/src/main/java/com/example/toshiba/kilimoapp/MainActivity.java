@@ -1,6 +1,7 @@
 package com.example.toshiba.kilimoapp;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,6 +15,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import static java.security.AccessController.getContext;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -84,6 +87,11 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_news:
                 fragment = new HabariKilimo();
                 break;
+            case R.id.nav_account:
+                Intent i = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(i);
+                break;
+
         }
         if (fragment != null){
             FragmentTransaction ft = getFragmentManager().beginTransaction();
