@@ -91,6 +91,9 @@ public class MainActivity extends AppCompatActivity
                 Intent i = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(i);
                 break;
+            case R.id.nav_diseases:
+                fragment = new MagonjwaActivity();
+                break;
 
         }
         if (fragment != null){

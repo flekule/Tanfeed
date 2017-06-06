@@ -20,9 +20,9 @@
             android:title="Akaunti yangu"/>
 
         <item
-            android:id="@+id/nav_tools"
+            android:id="@+id/nav_diseases"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Magonjwa" />
     </group>
 
     <item android:title="Communicate">

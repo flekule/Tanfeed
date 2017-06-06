@@ -17,9 +17,47 @@
 
     <string name="action_settings">Settings</string>
 
-    <string name="karibu_app">Karibu katika app yetu ya kilimo ndugu , jali mifugo yako kwa kufuata njia bora za ufugaji zilizofanyiwa tafiti na wataalamu wetu"</string>
+    <string name="karibu_app">Karibu katika app yetu ya kilimo ndugu ,
+                              jali mifugo yako kwa kufuata njia bora za ufugaji
+                              zilizofanyiwa tafiti na wataalamu wetu"
+    </string>
     <string name="tanfeeds">Tanfeeds</string>
+
+    <string name="maelezo_newcastle">
+        Newcastle ni ugonjwa unaosababishwa na <b>Virusi</b> wanaoitwa NDV (Newcastle disease Virus).
+        Uligundulika kwa mara ya kwanza mwaka 1926 indonesia na mwaka 1927
+        newcastle uingereza ilipopatia jina lake. Dalili za ugonjwa huu
+        hutegemea na umri wa kuku wako, afya na aina ya hao kuku.
+        Kuku akipata virusi hao hukaa siku 2 mpaka 15 kabla ya kuanza kuumwa. \n \n
+
+        <b><u>Njia za kuambukizwa</u></b>:
+       \n \t &#8226; Hewa
+       \n \t &#8226; Kinyesi cha kuku alieathirika,
+       \n \t &#8226; Chakula,
+         \n \t &#8226; Viatu vya mtu aliepita kwenye virusi
+      \n \t  &#8226; Maji au mabanda yenye hivyo virusi,
+        \n
+        \n
+        <b><u>Dalili za newcastle</u></b>
+        \n Newcastle huambatana na magonjwa ya njia ya hewa na misuli ya fahamu kama vile: \n
+        \n \t &#8226; Kuku kukohoa na kukosa hewa
+        \n \t &#8226; Kutetemeka
+         \n \t &#8226; Mabawa kulegea na kulala chini
+         \n \t &#8226; Shingo kugeuka na kulegea
+         \n \t &#8226; Uvimbe machoni na shingoni
+         \n \t &#8226; Kulemaa kwa kuku na kuzunguka zunguka
+         \n \t &#8226; Kuharisha kinyesi cha kijani
+         \n \t &#8226; Kupungua utagaji wa mayai na mayai kua laini
+         \n \t &#8226; Vifo vya kuku vya ghafla \n
+
+        Kuku yeyote mwenye dalili za <i>Newcastle</i> atolewe mara moja na atengwe na wengine. Vifaranga ni LAZIMA wapewe chanjo ya newcastle
+        kwani tiba ya newcastle haipo .
+
+
+
+    </string>
     <string name="tanfeeds_site">www.tanfeeds.com</string>
     <string name="email">Email</string>
     <string name="name">Name</string>
+    <string name="ugonjwa_wa_newcastle">Ugonjwa wa newcastle</string>
 </resources>
