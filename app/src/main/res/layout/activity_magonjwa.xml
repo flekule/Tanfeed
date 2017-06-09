@@ -1,82 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
 
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/pager"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:isScrollContainer="true">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center|left"
-        android:orientation="vertical"
-        tools:ignore="RtlHardcoded">
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Magonjwa Maarufu ya kuku"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:paddingBottom="15sp"
-        tools:ignore="HardcodedText" />
-
-    <ImageView
-        android:id="@+id/Disease1"
-        android:layout_width="257dp"
-        android:layout_height="180dp"
-        app:srcCompat="@drawable/newcastle1"
-        android:layout_gravity="center"
-
-        android:contentDescription="Kuku mwenye newcastle"
-        tools:ignore="ContentDescription" />
 
 
-        <TextView
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="textPersonName"
-            android:paddingTop="10sp"
-            android:text="@string/ugonjwa_wa_newcastle"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold" />
-        <TextView
-            android:id="@+id/editText2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/maelezo_newcastle"
-            tools:ignore="TextFields"
-            android:paddingBottom="10sp"/>
 
 
-        <ImageView
-        android:id="@+id/Disease2"
-            android:layout_width="257dp"
-            android:layout_height="180dp"
-            android:background="@drawable/gumboro"
-            android:layout_gravity="center"
-        tools:ignore="ContentDescription" />
 
-        <TextView
-            android:id="@+id/editText3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="center"
-            android:inputType="textPersonName"
-            android:paddingTop="10sp"
-            android:text="ugonjwa wa Gumboro"
-            android:textAlignment="center"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold" />
-</LinearLayout>
 
-</ScrollView>
+
+
+
+
+
+</android.support.v4.view.ViewPager>
