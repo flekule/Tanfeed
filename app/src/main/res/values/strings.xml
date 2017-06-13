@@ -56,7 +56,25 @@
 
 
     </string>
-    <string name="maelezo_gumboro">Gumboro ni ugonjwa unaosababishwa na </string>
+    <string name="maelezo_gumboro">
+        Gumboro (Infectious Bronchitis) ni ugonjwa wa kuku unaosababishwa na virusi ambao
+        mara nyingi hushambulia kuku wakiwa bado vifaranga. Ugonjwa huu huua kinga za kuku
+        na hivyo kuongeza uwezekano wa kuku kupata maambukizi ya magonjwa mengine. Uligundulika
+        kwa mara ya kwanza mjini <b>Gumboro</b> delaware mwaka 1962. Virusi hawa wanaoitwa
+        <i>Infectious bursal disease virus (IBDV) </i> hushambulia kati ya wiki ya tatu mpaka
+        ya sita ya kuku.
+
+        \n \n
+        <u><b>Dalili za ugonjwa:</b></u>
+        \n \t &#8226; Kuku kukaukiwa maji
+        \n \t &#8226;  Manyoya kunyonyoka
+        \n \t &#8226;  Kuku kuharisha
+        \n \t &#8226;  kuvimba sehemu ya cloacka
+        \n \t &#8226;  Vifo vya kuku
+        \n \t &#8226;  Kinga kushuka matoke yake kuku huumwa mara kwa mara.
+
+
+    </string>
     <string name="tanfeeds_site">www.tanfeeds.com</string>
     <string name="email">Email</string>
     <string name="name">Name</string>

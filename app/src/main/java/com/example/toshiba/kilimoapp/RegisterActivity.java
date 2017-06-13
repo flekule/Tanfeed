@@ -69,6 +69,7 @@ public class RegisterActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
     }
 
     private void submitForm() {

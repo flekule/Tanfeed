@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingLeft="5sp">
 
 
     <LinearLayout
@@ -50,10 +51,16 @@
             android:id="@+id/editText2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/maelezo_newcastle"
+            android:text="@string/maelezo_gumboro"
             tools:ignore="TextFields"
             android:paddingBottom="15sp"
             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Page 2"
+            android:textAlignment="center"/>
     </LinearLayout>
 
 </ScrollView>
