@@ -4,7 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp">
 
 
     <LinearLayout
@@ -27,10 +29,10 @@
             android:id="@+id/Disease1"
             android:layout_width="257dp"
             android:layout_height="138dp"
-            app:srcCompat="@drawable/gumboro2"
             android:layout_gravity="center"
+            android:background="@drawable/gumboro2"
 
-            android:contentDescription="@string/kuku_mwenye_mareks"
+            android:visibility="visible"
             tools:ignore="ContentDescription" />
 
 

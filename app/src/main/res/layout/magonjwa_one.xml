@@ -5,8 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="5sp"
-    android:paddingRight="5sp">
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp">
 
 
   <LinearLayout
@@ -25,15 +25,15 @@
             android:paddingBottom="15sp"
             tools:ignore="HardcodedText" />
 
-        <ImageView
-            android:id="@+id/Disease1"
-            android:layout_width="257dp"
-            android:layout_height="138dp"
-            app:srcCompat="@drawable/newcastle1"
-            android:layout_gravity="center"
+      <ImageView
+          android:id="@+id/Disease1"
+          android:layout_width="257dp"
+          android:layout_height="138dp"
+          android:layout_gravity="center"
+          android:background="@drawable/newcastle1"
 
-            android:contentDescription="@string/kuku_mwenye_newcastle"
-            tools:ignore="ContentDescription" />
+          android:visibility="visible"
+          tools:ignore="ContentDescription" />
 
 
         <TextView

@@ -5,8 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="5sp"
-    android:paddingRight="5sp">
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp">
 
 
     <LinearLayout
@@ -27,12 +27,12 @@
 
         <ImageView
             android:id="@+id/Disease2"
-            android:layout_width="185dp"
+            android:layout_width="215dp"
             android:layout_height="138dp"
-            app:srcCompat="@drawable/gumboro"
             android:layout_gravity="center"
+            android:background="@drawable/gumboro1"
 
-            android:contentDescription="@string/kuku_mwenye_gumboro"
+            android:visibility="visible"
             tools:ignore="ContentDescription" />
 
 
@@ -47,14 +47,15 @@
             android:textAlignment="center"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold" />
+
         <TextView
             android:id="@+id/editText2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/maelezo_gumboro"
-            tools:ignore="TextFields"
             android:paddingBottom="15sp"
-            />
+            android:text="@string/maelezo_gumboro"
+            android:visibility="visible"
+            tools:ignore="TextFields" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

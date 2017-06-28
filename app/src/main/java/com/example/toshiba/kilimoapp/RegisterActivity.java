@@ -32,7 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
     private static final String URL_FOR_REGISTRATION = "http://com.example.toshiba.kilimoapp/android_login_example/register.php";
     ProgressDialog progressDialog;
 
-    private EditText signupInputName, signupInputEmail, signupInputPassword, signupInputAge;
+    private EditText signupInputName, signupInputEmail, signupInputPassword, signupInputWeeks, signupInputQuantity;
     private Button btnSignUp;
     private Button btnLinkLogin;
     private RadioGroup genderRadioGroup;
@@ -49,7 +49,8 @@ public class RegisterActivity extends AppCompatActivity {
         signupInputName = (EditText) findViewById(R.id.signup_input_name);
         signupInputEmail = (EditText) findViewById(R.id.signup_input_email);
         signupInputPassword = (EditText) findViewById(R.id.signup_input_password);
-        signupInputAge = (EditText) findViewById(R.id.signup_input_age);
+        signupInputWeeks = (EditText) findViewById(R.id.signup_input_weeks);
+        signupInputQuantity = (EditText) findViewById(R.id.signup_input_quantity);
 
         btnSignUp = (Button) findViewById(R.id.btn_signup);
         btnLinkLogin = (Button) findViewById(R.id.btn_link_login);
@@ -84,11 +85,12 @@ public class RegisterActivity extends AppCompatActivity {
         registerUser(signupInputName.getText().toString(),
                 signupInputEmail.getText().toString(),
                 signupInputPassword.getText().toString(),
+                signupInputQuantity.getText().toString(),
                 gender,
-                signupInputAge.getText().toString());
+                signupInputWeeks.getText().toString());
     }
 
-    private void registerUser(final String name,  final String email, final String password,
+    private void registerUser(final String name,  final String email, final String password, final String quantity,
                               final String gender, final String dob) {
         // Tag used to cancel the request
         String cancel_req_tag = "register";
@@ -147,6 +149,7 @@ public class RegisterActivity extends AppCompatActivity {
                 params.put("email", email);
                 params.put("password", password);
                 params.put("gender", gender);
+                params.put("Quantity",quantity);
                 params.put("age", dob);
                 return params;
             }
