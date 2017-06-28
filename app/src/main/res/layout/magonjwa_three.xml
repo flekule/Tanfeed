@@ -30,7 +30,7 @@
             app:srcCompat="@drawable/gumboro2"
             android:layout_gravity="center"
 
-            android:contentDescription="Kuku mwenye newcastle"
+            android:contentDescription="@string/kuku_mwenye_mareks"
             tools:ignore="ContentDescription" />
 
 
@@ -40,9 +40,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="center"
-            android:inputType="textPersonName"
+
             android:paddingTop="10sp"
-            android:text="Ugonjwa wa Mareks"
+            android:text="@string/ugonjwa_wa_mareks"
             android:textAlignment="center"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold" />

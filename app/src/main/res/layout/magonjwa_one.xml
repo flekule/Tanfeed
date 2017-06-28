@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="5sp">
+    android:paddingLeft="5sp"
+    android:paddingRight="5sp">
 
 
   <LinearLayout
@@ -31,7 +32,7 @@
             app:srcCompat="@drawable/newcastle1"
             android:layout_gravity="center"
 
-            android:contentDescription="Kuku mwenye newcastle"
+            android:contentDescription="@string/kuku_mwenye_newcastle"
             tools:ignore="ContentDescription" />
 
 
@@ -46,7 +47,8 @@
             android:text="@string/ugonjwa_wa_newcastle"
             android:textAlignment="center"
             android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="TextViewEdits" />
         <TextView
             android:id="@+id/editText2"
             android:layout_width="wrap_content"
@@ -59,7 +61,7 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_gravity="bottom"
-          android:text="Page 1"
+          android:text="@string/page_1"
           android:textAlignment="center"/>
 </LinearLayout>
 

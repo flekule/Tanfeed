@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="5sp">
+    android:paddingLeft="5sp"
+    android:paddingRight="5sp">
 
 
     <LinearLayout
@@ -26,12 +27,12 @@
 
         <ImageView
             android:id="@+id/Disease2"
-            android:layout_width="257dp"
+            android:layout_width="185dp"
             android:layout_height="138dp"
             app:srcCompat="@drawable/gumboro"
             android:layout_gravity="center"
 
-            android:contentDescription="Kuku mwenye Gumboro"
+            android:contentDescription="@string/kuku_mwenye_gumboro"
             tools:ignore="ContentDescription" />
 
 
@@ -41,9 +42,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="center"
-            android:inputType="textPersonName"
             android:paddingTop="10sp"
-            android:text="Ugonjwa wa gumboro"
+            android:text="@string/ugonjwa_wa_gumboro"
             android:textAlignment="center"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold" />
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:text="Page 2"
+            android:text="@string/page_2"
             android:textAlignment="center"/>
     </LinearLayout>
 

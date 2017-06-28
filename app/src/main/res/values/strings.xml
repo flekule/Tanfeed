@@ -4,16 +4,18 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_activity_splash_screen">Tanfeeds</string>
-    <string name="btn_login">Login</string>
-    <string name="hint_password">Password</string>
-    <string name="hint_email">Email</string>
-    <string name="btn_link_signup">Signup</string>
-    <string name="hint_dob">Age</string>
-    <string name="hint_gender">Gender</string>
-    <string name="male">Male</string>
-    <string name="female">Female</string>
-    <string name="btn_sign_up">Signup</string>
-    <string name="btn_link_login">Login</string>
+    <string name="btn_login">Ingia</string>
+    <string name="hint_password">NenoSiri</string>
+    <string name="hint_email">Barua Pepe</string>
+    <string name="btn_link_signup">Jisajili</string>
+    <string name="hint_dob">Umri</string>
+    <string name="hint_chicktype">Aina Ya kuku</string>
+    <string name="hint_weeks">Umri wa Kuku(Wiki)</string>
+    <string name="layers">Layers</string>
+    <string name="broilers">Broilers</string>
+    <string name="btn_sign_up">Jisajili</string>
+    <string name="hint_quantity">Idadi</string>
+    <string name="btn_link_login">Ingia</string>
 
     <string name="action_settings">Settings</string>
 
@@ -65,18 +67,36 @@
         ya sita ya kuku.
 
         \n \n
+        <u><b>Njia za maambukizi:</b></u>
+        \n \t &#8226; Njia ya maji
+        \n \t &#8226; Kutembelea banda lende maambukizi
+        \n \t &#8226; Maambukizi ya kuku na kuku
+        \n\n
         <u><b>Dalili za ugonjwa:</b></u>
         \n \t &#8226; Kuku kukaukiwa maji
         \n \t &#8226;  Manyoya kunyonyoka
+        \n \t &#8226; kuvilia kwa damu kwenye firigisi
+        \n \t &#8226; uvimbe kwenye figo na nyongo ya kuku
+
         \n \t &#8226;  Kuku kuharisha
         \n \t &#8226;  kuvimba sehemu ya cloacka
         \n \t &#8226;  Vifo vya kuku
-        \n \t &#8226;  Kinga kushuka matoke yake kuku huumwa mara kwa mara.
+        \n \t &#8226;  Kinga kushuka matokeo yake kuku huumwa mara kwa mara.
+        \n \n
+        Gumboro hukingwa kwa chanjo kwakua haina tiba. virusi hawa hukaa muda mrefu kwenye mabanda na maji
+        kwa hiyo banda likae muda mrefu bila kuwekwa chochote baada ya kuondoa kuku wenye ugonjwa huu.
 
 
     </string>
     <string name="tanfeeds_site">www.tanfeeds.com</string>
-    <string name="email">Email</string>
-    <string name="name">Name</string>
+    <string name="email">Barua Pepe</string>
+    <string name="name">Jina</string>
     <string name="ugonjwa_wa_newcastle">Ugonjwa wa newcastle</string>
+    <string name="kuku_mwenye_newcastle">Kuku mwenye newcastle</string>
+    <string name="page_1">Page 1</string>
+    <string name="kuku_mwenye_gumboro">Kuku mwenye Gumboro</string>
+    <string name="page_2">Page 2</string>
+    <string name="ugonjwa_wa_gumboro">Ugonjwa wa gumboro</string>
+    <string name="kuku_mwenye_mareks">Kuku mwenye mareks</string>
+    <string name="ugonjwa_wa_mareks">Ugonjwa wa Mareks</string>
 </resources>

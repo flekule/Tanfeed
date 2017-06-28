@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/android_bg2"
+    android:background="@drawable/android_bg4"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp">
@@ -70,13 +70,25 @@
             android:layout_marginTop="10dp">
 
             <EditText
-                android:id="@+id/signup_input_age"
+                android:id="@+id/signup_input_weeks"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="@string/hint_dob" />
+                android:hint="@string/hint_weeks" />
         </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/signup_input_layout_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
+            <EditText
+                android:id="@+id/signup_input_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hint_quantity" />
+        </android.support.design.widget.TextInputLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -89,7 +101,7 @@
                 android:fontFamily="@string/hint_password"
                 android:fontFeatureSettings="@string/hint_password"
                 android:paddingRight="15dp"
-                android:text="@string/hint_gender"
+                android:text="@string/hint_chicktype"
                 android:textSize="20sp"
                 tools:ignore="RtlHardcoded,RtlSymmetry,UnusedAttribute" />
 
@@ -106,13 +118,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:text="@string/male" />
+                    android:text="@string/layers" />
 
                 <RadioButton
                     android:id="@+id/female_radio_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/female" />
+                    android:text="@string/broilers" />
             </RadioGroup>
         </RelativeLayout>
 
