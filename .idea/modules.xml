@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/KilimoApp.iml" filepath="$PROJECT_DIR$/KilimoApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tanfeed.iml" filepath="$PROJECT_DIR$/Tanfeed.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
