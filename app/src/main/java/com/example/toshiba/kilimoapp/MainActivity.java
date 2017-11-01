@@ -89,16 +89,19 @@ public class MainActivity extends AppCompatActivity
     public void displaySelectedScreen(int id){
         Fragment fragment = null;
         switch (id){
+            case R.id.Home:
+                Intent h = new Intent(MainActivity.this,MainActivity.class);
+                startActivity(h);
 
             case R.id.nav_news:
                fragment = new HabariActivity();
                 break;
             case R.id.nav_account:
-                Intent i = new Intent(MainActivity.this, AccountActivity.class);
-                startActivity(i);
+               fragment = new AccountActivity();
                 break;
             case R.id.nav_diseases:
-                fragment = new MagonjwaActivity();
+                Intent j = new Intent(MainActivity.this,MagonjwaActivity.class);
+                startActivity(j);
                 break;
 
         }

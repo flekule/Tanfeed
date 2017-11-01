@@ -3,12 +3,29 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="50pt">
+    <ImageView
+        android:layout_width="50pt"
+        android:layout_height="50pt"
+        android:src="@drawable/androidbg2"/>
 
-    <EditText
-        android:id="@+id/editText"
+
+</ListView>
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Kilimo news" />
+        android:layout_height="50pt">
+
+    </ListView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="50pt">
+
+    </ListView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="50pt">
+
+    </ListView>
 </LinearLayout>

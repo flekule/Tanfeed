@@ -44,11 +44,11 @@ public class AccountActivity extends Fragment {
     {
         View rootView = inflater.inflate(R.layout.account_activity, container, false);
 
-      loginInputEmail = (EditText) getView().findViewById(R.id.editEmail);
+      loginInputEmail = (EditText) getView().findViewById(R.id.login_input_email);
 
-        loginInputPassword = (EditText) getView().findViewById(R.id.editPassword);
-        btnlogin = (Button) getView().findViewById(R.id.btnSignIn);
-        btnLinkSignup = (Button) getView().findViewById(R.id.btnRegister);
+        loginInputPassword = (EditText) getView().findViewById(R.id.login_input_password);
+        btnlogin = (Button) getView().findViewById(R.id.btn_login);
+        btnLinkSignup = (Button) getView().findViewById(R.id.btn_link_signup);
         // Progress dialog
         progressDialog = new ProgressDialog(getActivity());
         progressDialog.setCancelable(false);

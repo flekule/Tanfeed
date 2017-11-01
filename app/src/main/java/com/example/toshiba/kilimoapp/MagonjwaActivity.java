@@ -15,20 +15,22 @@ import android.widget.Adapter;
  * Created by user on 9/20/2017.
  */
 
-public class MagonjwaActivity extends Fragment {
+public class MagonjwaActivity extends FragmentActivity {
     ViewPager viewpager;
 
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        //returning our layout file
-        //change R.layout.yourlayoutfilename for each of your fragments
-        View view = inflater.inflate(R.layout.activity_magonjwa, container, false);
 
-
-        ViewPager viewpager  = (ViewPager) getView().findViewById(R.id.pager);
-        // or  (ImageView) view.findViewById(R.id.foo);
-    return view;
-
+    @Override
+    protected void onCreate( Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_magonjwa);
+        viewpager = (ViewPager) findViewById(R.id.pager);
+        PagerAdapter padapter = new PagerAdapter(getSupportFragmentManager());
+        viewpager.setAdapter(padapter);
     }
 
 
 }
+
+
+
+
