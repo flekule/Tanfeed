@@ -8,7 +8,7 @@
             android:title="Home" />
         <item
             android:id="@+id/nav_account"
-            android:icon="@drawable/ic_schedule_black_24dp"
+            android:icon="@drawable/ic_person_black_24dp"
             android:title="Akaunti yangu" />
         <item
             android:id="@+id/nav_news"
@@ -16,7 +16,7 @@
             android:title="Kilimo Habari" />
         <item
             android:id="@+id/nav_diseases"
-            android:icon="@drawable/ic_person_black_24dp"
+            android:icon="@drawable/ic_help_black_24dp"
             android:title="Magonjwa"/>
 
         <item

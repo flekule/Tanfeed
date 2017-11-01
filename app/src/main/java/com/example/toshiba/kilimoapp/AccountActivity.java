@@ -4,138 +4,138 @@ package com.example.toshiba.kilimoapp;
  * Created by user on 9/20/2017.
  */
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.ProgressDialog;
+import android.content.Intent;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
-        import android.content.Intent;
-        import android.content.SharedPreferences;
-        import android.graphics.Color;
-        import android.os.AsyncTask;
-        import android.support.v7.app.AppCompatActivity;
-        import android.os.Bundle;
-        import android.util.Log;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.EditText;
-        import android.widget.Toast;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 
-        import org.apache.http.NameValuePair;
-        import org.apache.http.message.BasicNameValuePair;
-        import org.json.JSONException;
-        import org.json.JSONObject;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-        import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
-public class AccountActivity extends AppCompatActivity {
+public class AccountActivity extends Fragment {
+    private static final String TAG = "LoginActivity";
+    private static final String URL_FOR_LOGIN = "https://10.0.2.2/android_login_example/login.php";
+    ProgressDialog progressDialog;
+    private EditText loginInputEmail, loginInputPassword;
+    private Button btnlogin;
+    private Button btnLinkSignup;
 
 
-    EditText editEmail, editPassword, editName;
-    Button btnSignIn, btnRegister;
+    @SuppressWarnings("ConstantConditions")
+    @Nullable
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
+        View rootView = inflater.inflate(R.layout.account_activity, container, false);
 
-    String URL= "http://10.0.3.2/test_android/index.php";
+      loginInputEmail = (EditText) getView().findViewById(R.id.editEmail);
 
-    JSONParser jsonParser=new JSONParser();
-
-    int i=0;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.account_activity);
-
-        editEmail=(EditText)findViewById(R.id.editEmail);
-        editName=(EditText)findViewById(R.id.editName);
-        editPassword=(EditText)findViewById(R.id.editPassword);
-
-        btnSignIn=(Button)findViewById(R.id.btnSignIn);
-        btnRegister=(Button)findViewById(R.id.btnRegister);
-
-        btnSignIn.setOnClickListener(new View.OnClickListener() {
+        loginInputPassword = (EditText) getView().findViewById(R.id.editPassword);
+        btnlogin = (Button) getView().findViewById(R.id.btnSignIn);
+        btnLinkSignup = (Button) getView().findViewById(R.id.btnRegister);
+        // Progress dialog
+        progressDialog = new ProgressDialog(getActivity());
+        progressDialog.setCancelable(false);
+        btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AttemptLogin attemptLogin= new AttemptLogin();
-                attemptLogin.execute(editName.getText().toString(),editPassword.getText().toString(),"");
+                loginUser(loginInputEmail.getText().toString(),
+                        loginInputPassword.getText().toString());
             }
+
         });
 
-        btnRegister.setOnClickListener(new View.OnClickListener() {
+        btnLinkSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                if(i==0)
-                {
-                    i=1;
-                    editEmail.setVisibility(View.VISIBLE);
-                    btnSignIn.setVisibility(View.GONE);
-                    btnRegister.setText("CREATE ACCOUNT");
-                }
-                else{
-
-                    btnRegister.setText("REGISTER");
-                    editEmail.setVisibility(View.GONE);
-                    btnSignIn.setVisibility(View.VISIBLE);
-                    i=0;
-
-                    AttemptLogin attemptLogin= new AttemptLogin();
-                    attemptLogin.execute(editName.getText().toString(),editPassword.getText().toString(),editEmail.getText().toString());
-
-                }
+                Intent i = new Intent(getActivity().getApplicationContext(), RegisterActivity.class);
+                startActivity(i);
 
             }
         });
-
-
+        return rootView;
     }
 
-    private class AttemptLogin extends AsyncTask<String, Void, JSONObject>{
+    private void loginUser( final String email, final String password) {
+        // Tag used to cancel the request
+        String cancel_req_tag = "login";
+        progressDialog.setMessage("Logging you in...");
+        showDialog();
+        StringRequest strReq = new StringRequest(Request.Method.POST,
+                URL_FOR_LOGIN, new Response.Listener<String>() {
 
-        @Override
+            @Override
+            public void onResponse(String response) {
+                Log.d(TAG, "Register Response: " + response.toString());
+                hideDialog();
+                try {
+                    JSONObject jObj = new JSONObject(response);
+                    boolean error = jObj.getBoolean("error");
 
-        protected void onPreExecute() {
+                    if (!error) {
+                        String user = jObj.getJSONObject("user").getString("name");
+                        // Launch User activity
+                        Intent intent = new Intent(
+                                AccountActivity.this.getActivity(),
+                                MainActivity.class);
+                        intent.putExtra("username", user);
+                        startActivity(intent);
+                        getActivity().finish();
+                    } else {
 
-            super.onPreExecute();
-
-        }
-
-        @Override
-
-        protected JSONObject doInBackground(String... args) {
-
-
-
-            String email = args[2];
-            String password = args[1];
-            String name= args[0];
-
-            ArrayList params = new ArrayList();
-            params.add(new BasicNameValuePair("username", name));
-            params.add(new BasicNameValuePair("password", password));
-            if(email.length()>0)
-                params.add(new BasicNameValuePair("email",email));
-
-            JSONObject json = jsonParser.makeHttpRequest(URL, "POST", params);
-
-
-            return json;
-
-        }
-
-        protected void onPostExecute(JSONObject result) {
-
-            // dismiss the dialog once product deleted
-            //Toast.makeText(getApplicationContext(),result,Toast.LENGTH_LONG).show();
-
-            try {
-                if (result != null) {
-                    Toast.makeText(getApplicationContext(),result.getString("message"),Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Unable to retrieve any data from server", Toast.LENGTH_LONG).show();
+                        String errorMsg = jObj.getString("error_msg");
+                        Toast.makeText(getActivity().getApplicationContext(),
+                                errorMsg, Toast.LENGTH_LONG).show();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
-            } catch (JSONException e) {
-                e.printStackTrace();
+
             }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Login Error: " + error.getMessage());
+                Toast.makeText(getActivity().getApplicationContext(),
+                        error.getMessage(), Toast.LENGTH_LONG).show();
+                hideDialog();
+            }
+        }) {
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting params to login url
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("email", email);
+                params.put("password", password);
+                return params;
+            }
+        };
+        // Adding request to request queue
+        AppSingleton.getInstance(getActivity().getApplicationContext()).addToRequestQueue(strReq,cancel_req_tag);
+    }
 
-
-        }
-
+    private void showDialog() {
+        if (!progressDialog.isShowing())
+            progressDialog.show();
+    }
+    private void hideDialog() {
+        if (progressDialog.isShowing())
+            progressDialog.dismiss();
     }
 }

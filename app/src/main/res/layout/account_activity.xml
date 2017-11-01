@@ -17,10 +17,10 @@
             android:paddingRight="24dp"
             android:id="@+id/linearLayout">
 
-            <EditText android:id="@+id/editName"
+            <EditText android:id="@+id/editEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Username"
+                android:hint="Email"
                 android:textColor="#FF192133"
                 android:textColorHint="#A0192133"
                 android:fontFamily="sans-serif-light"
@@ -35,18 +35,6 @@
                 android:textColorHint="#A0192133"
                 android:fontFamily="sans-serif-light"
                 android:hint="Password"
-                android:focusable="true"
-                android:focusableInTouchMode="true" />
-
-            <EditText android:id="@+id/editEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:textColor="#FF192133"
-                android:visibility="gone"
-                android:textColorHint="#A0192133"
-                android:fontFamily="sans-serif-light"
-                android:hint="Email"
                 android:focusable="true"
                 android:focusableInTouchMode="true" />
 

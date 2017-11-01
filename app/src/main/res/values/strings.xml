@@ -4,6 +4,108 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_activity_splash_screen">Tanfeeds</string>
-
+    <string name="hint_password">Password</string>
+    <string name="hint_gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
     <string name="action_settings">Settings</string>
+
+
+
+
+<string name="btn_login">Ingia</string>
+
+<string name="hint_email">Barua Pepe</string>
+<string name="btn_link_signup">Jisajili</string>
+<string name="hint_dob">Umri</string>
+
+<string name="hint_age">Umri</string>
+
+
+<string name="btn_sign_up">Jisajili</string>
+<string name="hint_quantity">Idadi</string>
+<string name="btn_link_login">Ingia</string>
+<string name="btn_logout">Logout</string>
+
+
+<string name="karibu_app"><b>Karibu </b>
+
+    </string>
+<string name="tanfeeds">Tanfeeds</string>
+
+<string name="maelezo_newcastle">
+        Newcastle ni ugonjwa unaosababishwa na <b>Virusi</b> wanaoitwa NDV (Newcastle disease Virus).
+        Uligundulika kwa mara ya kwanza mwaka 1926 indonesia na mwaka 1927
+        newcastle uingereza ilipopatia jina lake. Dalili za ugonjwa huu
+        hutegemea na umri wa kuku wako, afya na aina ya hao kuku.
+        Kuku akipata virusi hao hukaa siku 2 mpaka 15 kabla ya kuanza kuumwa. \n \n
+
+        <b><u>Njia za kuambukizwa</u></b>:
+       \n \t &#8226; Hewa
+       \n \t &#8226; Kinyesi cha kuku alieathirika,
+       \n \t &#8226; Chakula,
+         \n \t &#8226; Viatu vya mtu aliepita kwenye virusi
+      \n \t  &#8226; Maji au mabanda yenye hivyo virusi,
+        \n
+        \n
+        <b><u>Dalili za newcastle</u></b>
+        \n Newcastle huambatana na magonjwa ya njia ya hewa na misuli ya fahamu kama vile: \n
+        \n \t &#8226; Kuku kukohoa na kukosa hewa
+        \n \t &#8226; Kutetemeka
+         \n \t &#8226; Mabawa kulegea na kulala chini
+         \n \t &#8226; Shingo kugeuka na kulegea
+         \n \t &#8226; Uvimbe machoni na shingoni
+         \n \t &#8226; Kulemaa kwa kuku na kuzunguka zunguka
+         \n \t &#8226; Kuharisha kinyesi cha kijani
+         \n \t &#8226; Kupungua utagaji wa mayai na mayai kua laini
+         \n \t &#8226; Vifo vya kuku vya ghafla \n
+
+        Kuku yeyote mwenye dalili za <i>Newcastle</i> atolewe mara moja na atengwe na wengine. Vifaranga ni LAZIMA wapewe chanjo ya newcastle
+        kwani tiba ya newcastle haipo .
+
+
+
+    </string>
+<string name="maelezo_gumboro">
+        Gumboro (Infectious Bronchitis) ni ugonjwa wa kuku unaosababishwa na virusi ambao
+        mara nyingi hushambulia kuku wakiwa bado vifaranga. Ugonjwa huu huua kinga za kuku
+        na hivyo kuongeza uwezekano wa kuku kupata maambukizi ya magonjwa mengine. Uligundulika
+        kwa mara ya kwanza mjini <b>Gumboro</b> delaware mwaka 1962. Virusi hawa wanaoitwa
+        <i>Infectious bursal disease virus (IBDV) </i> hushambulia kati ya wiki ya tatu mpaka
+        ya sita ya kuku.
+
+        \n \n
+        <u><b>Njia za maambukizi:</b></u>
+        \n \t &#8226; Njia ya maji
+        \n \t &#8226; Kutembelea banda lende maambukizi
+        \n \t &#8226; Maambukizi ya kuku na kuku
+        \n\n
+        <u><b>Dalili za ugonjwa:</b></u>
+        \n \t &#8226; Kuku kukaukiwa maji
+        \n \t &#8226;  Manyoya kunyonyoka
+        \n \t &#8226; kuvilia kwa damu kwenye firigisi
+        \n \t &#8226; uvimbe kwenye figo na nyongo ya kuku
+
+        \n \t &#8226;  Kuku kuharisha
+        \n \t &#8226;  kuvimba sehemu ya cloacka
+        \n \t &#8226;  Vifo vya kuku
+        \n \t &#8226;  Kinga kushuka matokeo yake kuku huumwa mara kwa mara.
+        \n \n
+        Gumboro hukingwa kwa chanjo kwakua haina tiba. virusi hawa hukaa muda mrefu kwenye mabanda na maji
+        kwa hiyo banda likae muda mrefu bila kuwekwa chochote baada ya kuondoa kuku wenye ugonjwa huu.
+
+
+    </string>
+<string name="tanfeeds_site">www.tanfeeds.com</string>
+<string name="email">Barua Pepe</string>
+<string name="name">Jina</string>
+<string name="ugonjwa_wa_newcastle">Ugonjwa wa newcastle</string>
+<string name="kuku_mwenye_newcastle">Kuku mwenye newcastle</string>
+<string name="page_1">Page 1</string>
+<string name="kuku_mwenye_gumboro">Kuku mwenye Gumboro</string>
+<string name="page_2">Page 2</string>
+<string name="ugonjwa_wa_gumboro">Ugonjwa wa gumboro</string>
+<string name="kuku_mwenye_mareks">Kuku mwenye mareks</string>
+<string name="ugonjwa_wa_mareks">Ugonjwa wa Mareks</string>
 </resources>
+

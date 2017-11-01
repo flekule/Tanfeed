@@ -1,5 +1,9 @@
 package com.example.toshiba.kilimoapp;
 
+import android.accounts.Account;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.DialogFragment;
+import android.support.v4.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -13,6 +17,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import static android.R.attr.fragment;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -43,6 +50,8 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
+
+
 
 
     @Override
@@ -77,31 +86,40 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
-    @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
+    public void displaySelectedScreen(int id){
+        Fragment fragment = null;
+        switch (id){
 
-        if (id == R.id.Home) {
+            case R.id.nav_news:
+               fragment = new HabariActivity();
+                break;
+            case R.id.nav_account:
+                Intent i = new Intent(MainActivity.this, AccountActivity.class);
+                startActivity(i);
+                break;
+            case R.id.nav_diseases:
+                fragment = new MagonjwaActivity();
+                break;
 
-        } else if (id == R.id.nav_account) {
-
-
-        } else if (id == R.id.nav_news)    {
-
-        } else if (id == R.id.nav_diseases)   {
-
-        } else if (id == R.id.nav_kijiwe) {
-
-        } else if (id == R.id.nav_share)   {
-
-        } else if (id == R.id.nav_send)    {
+        }
+        if (fragment != null){
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.content_main, fragment);
+            ft.commit();
 
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+
+    }
+
+    @SuppressWarnings("StatementWithEmptyBody")
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+        displaySelectedScreen(id);
         return true;
     }
 }
